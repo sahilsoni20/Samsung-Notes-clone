@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Notes App</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes App</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <!-- Menu icon -->
+    <div class="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
 
-	<div class="container">
-		<!------ Menu icon ------->
-		<div class="menu-icon">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-		</div>
+    <!-- Side Menu Bar -->
+    <div class="box">
+        <nav>
+            <ul>
+                <li>
+                    <a>
+                        <img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071206/notes_kv7inh.png">
+                        <span>All notes</span>
+                        <p class="total-notes">0</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071228/star_uc5siv.png">
+                        <span>Favourite</span>
+                        <p class="favorite-notes-count">0</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071232/trash-can_f0ph0s.png">
+                        <span>Trash</span>
+                        <p class=""></p>
+                    </a>
+                </li>
+                <li>........................................</li>
+                <li>
+                    <a>
+                        <img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071227/setting_diosjs.png">
+                        <span>Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-		<!------ Side Menu Bar ------->
-		<div class="box">
-			<nav>
-				<ul>
-					<li><a><img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071206/notes_kv7inh.png"><span>All notes</span><p class="total-notes">0</p></a></li>
-					<li><a><img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071228/star_uc5siv.png"><span>Favourite</span><p class="favorite-notes-count">0</p></a></li>
-					<li><a><img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071232/trash-can_f0ph0s.png"><span>Trash</span><p class="">0</p></a></li>
-					<li>........................................</li>
-					<li><a><img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071227/setting_diosjs.png"><span>Setting</span></a></li>
-				</ul>
-			</nav>
-		</div>
-		<!------ Mid Heading ------->
-		<div class="head">
-			<div class="heading">
-				<h3> All notes <h3>
-				<input type="text" placeholder="Search..." class="search-input" id="search-box" autocomplete="off"><img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071208/loupe_fqlqwj.png" class="search-icon">
-				<div class="result-box"></div>
-			</div>
-			<img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071224/sort_fsvcug.png" class="sort"><span>Sort by</span>
-		</div>	
+    <!-- Mid Heading -->
+    <div class="head">
+        <div class="heading">
+            <h3>All notes
+                <input autocomplete="off" class="search-input" id="search-box" placeholder="Search..." type="text">
+                <img class="search-icon" src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071208/loupe_fqlqwj.png">
+                <div class="result-box"></div>
+            </h3>
+        </div>
+        <img class="sort" src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071224/sort_fsvcug.png">
+        <span>Sort by</span>
+    </div>
 
-		<!------  Notes Icon ------->
-		<div class="icon">
-			<img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071182/edit_lzfnkp.png">
-		</div>
+    <!-- Notes Icon -->
+    <div class="icon">
+        <img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071182/edit_lzfnkp.png">
+    </div>
 
-		<!------  PoP-Up Box ------->
-		<div class="popup-box">
-			<div class="popup-head">	
-				<img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071183/arrow_mvprcr.png">
-				<input type="text" placeholder="Title">
-			</div>
-			<textarea></textarea>
-			<button>Complete</button>
-		</div>
+    <!-- PoP-Up Box -->
+    <div class="popup-box">
+        <div class="popup-head">
+            <img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071183/arrow_mvprcr.png">
+            <input placeholder="Title" type="text">
+        </div>
+        <textarea></textarea>
+        <button>Complete</button>
+    </div>
 
-		<!------  Notes ------->
-		<div class="wrapper" id="notes-container">
+    <!-- Notes -->
+    <div class="wrapper" id="notes-container"></div>
+</div>
 
-			<!--div class="notes">
-				<span></span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-						<li><span>Favorite</span><i class="fa-regular fa-star" id="starIcon"></i></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-					<button class="ibtn"><i class="fa-regular fa-star"></button>
-				</div>
-			</div-->
-	
-		</div>
- 
-	</div>
-
-	<script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Notes App</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
@@ -20,9 +21,9 @@
 		<div class="box">
 			<nav>
 				<ul>
-					<li><a><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/notes.png"><span>All notes</span><p id="total-notes">0</p></a></li>
-					<li><a><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/star.png"><span>Favourite</span><p id="total-notes">0</p></a></li>
-					<li><a><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/trash-can.png"><span>Trash</span><p id="total-notes">0</p></a></li>
+					<li><a><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/notes.png"><span>All notes</span><p class="total-notes">0</p></a></li>
+					<li><a><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/star.png"><span>Favourite</span><p class="favorite-notes-count">0</p></a></li>
+					<li><a><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/trash-can.png"><span>Trash</span><p class="">0</p></a></li>
 					<li>........................................</li>
 					<li><a><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/setting.png"><span>Setting</span></a></li>
 				</ul>
@@ -39,13 +40,13 @@
 		</div>	
 
 		<!------  Notes Icon ------->
-		<div class="notes-icon">
+		<div class="icon">
 			<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/edit.png">
 		</div>
 
 		<!------  PoP-Up Box ------->
 		<div class="popup-box">
-			<div class="popup-head">
+			<div class="popup-head">	
 				<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/arrow.png">
 				<input type="text" placeholder="Title">
 			</div>
@@ -54,10 +55,10 @@
 		</div>
 
 		<!------  Notes ------->
-		<div class="wrapper">
+		<div class="wrapper" id="notes-container">
 
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
+			<!--div class="notes">
+				<span></span>
 				<div class="settings">
 					<div class="image">	
 						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
@@ -65,145 +66,18 @@
 					<ul class="menu">
 						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
 						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
+						<li><span>Favorite</span><i class="fa-regular fa-star" id="starIcon"></i></li>
 					</ul>
 				</div>
 				<div class="bottom-context">
 					<p>This is Title</p>
 					<span>Aug 12</span>
+					<button class="ibtn"><i class="fa-regular fa-star"></button>
 				</div>
-			</div>
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div>
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div>
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div>
-
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div>
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div>
-
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div><div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div>
-			<div class="notes">
-				<span>blah blah blah blah blah blah blah blah blah blah</span>
-				<div class="settings">
-					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" >
-					</div>
-					<ul class="menu">
-						<li><span>Edit</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
-						<li><span>Delete</span><img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
-					</ul>
-				</div>
-				<div class="bottom-context">
-					<p>This is Title</p>
-					<span>Aug 12</span>
-				</div>
-			</div>
-			
+			</div-->
+	
 		</div>
-
+ 
 	</div>
 
 	<script src="script.js"></script>

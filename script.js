@@ -52,13 +52,13 @@ function showNotes() {
 				<span>${note.description}</span>
 				<div class="settings">
 					<div class="image">	
-						<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/ellipsis.png" onclick = "showMenu(this)">
+						<img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071184/ellipsis_uwzzsk.png" onclick = "showMenu(this)">
 					</div>
 					<ul class="menu">
 						<li onclick="updateNote(${index}, '${note.title}', '${note.description}')"><span>Edit</span>
-							<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/pencil.png"></li>
+							<img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071206/pencil_bhg7wt.png"></li>
 						<li onclick="deleteNote(${index})"><span>Delete</span>
-							<img src="file:///C:/Users/ACER/Desktop/HTML/JavaScript/Notes%20App/delete.png"></li>
+							<img src="https://res.cloudinary.com/dkjdqncdh/image/upload/v1693071182/delete_i5kizu.png"></li>
 						<li onclick="toggleFavorite(${index})">
 							<span class="fav">Favorite</span><i class="fa-solid fa-star fa-xs" id="starIcon-${index}"></i>
 						</li>
